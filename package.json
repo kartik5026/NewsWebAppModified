@@ -1,0 +1,15 @@
+{
+  "name": "razorpay",
+  "version": "1.0.0",
+  "description": "payment gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kartik thakur",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "razorpay": "^2.8.6"
+  }
+}
