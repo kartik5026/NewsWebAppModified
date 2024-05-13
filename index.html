@@ -1,127 +1,126 @@
-<html lang="en" class="h-100" data-bs-theme="dark">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="/docs/5.3/assets/js/color-modes.js"></script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.112.5">
-    <title>Cover Template · Bootstrap v5.3</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-
-
-
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#712cf9">
-
-<!-- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.5s ease;
+            overflow-x: hidden;
+            background-image: url('https://source.unsplash.com/1600x900/?news');
+            background-size: cover;
         }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            transition: max-width 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+        .btn-signup,
+        .btn-signin {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 40px;
+            margin: 20px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            background-color: #ff6b6b;
+            border: none;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        .btn-signup:hover,
+        .btn-signin:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
+        }
+        .btn-signin {
+            background-color: #6ab04c;
+            box-shadow: 0 5px 15px rgba(106, 176, 76, 0.3);
+        }
+        .btn-signin:hover {
+            background-color: #5b9441;
+            box-shadow: 0 8px 20px rgba(106, 176, 76, 0.5);
+        }
+        .footer-text {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #576574;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+        .footer-text a {
+            color: #576574;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-text a:hover {
+            text-decoration: underline;
+            color: #34495e;
+        }
+        .btn-animate {
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
             }
         }
-
-       
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-    
-
-       
-    </style> -->
-
+    </style>
 </head>
+<body>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<div class="container text-center">
+    <main>
+        <h2 class="main-title">Top 5 News</h2>
 
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">News</h3>
-
-            </div>
-        </header>
-
-        <main class="px-3">
-            <h1>Top 5 News</h1>
-
-            <form action="/getnews" method="post">
-                <select name="category" class="form-select">
-                    <option value="business">business</option>
-                    <option val="entertainment">entertainment</option>
-                    <option value="general">general</option>
-                    <option value="health">health</option>
-                    <option value="science">science</option>
-                    <option value="sports">sports</option>
-                    <option value="technology">technology</option>
+        <form action="/getnews" method="post" class="mb-4">
+            <div class="mb-3">
+                <select name="category" class="form-select form-select-lg">
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="general">General</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
                 </select>
-                <br>
-                <input type="submit" value="GetNews!" class="btn btn-danger">
-            </form>
-            <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-            </p>
-        </main>
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg btn-animate">Get News!</button>
+        </form>
+        
+        <a href="/signup" class="btn btn-lg btn-signup btn-animate">Sign Up</a>
+        <a href="/signin" class="btn btn-lg btn-signin btn-animate">Sign In</a>
+    </main>
 
-        <footer class="mt-auto text-white-50">
-            <p>Made By <a href="https://www.linkedin.com/in/kartik-thakur-/" class="text-white">Kartik Thakur</a></p>
-        </footer>
-    </div>
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <footer class="footer-text mt-5">
+        <p>Made By <a href="https://www.linkedin.com/in/kartik-thakur-/" class="text-decoration-none">Kartik Thakur</a></p>
+    </footer>
+</div>
 
-
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
